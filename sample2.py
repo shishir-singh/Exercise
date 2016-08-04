@@ -56,6 +56,7 @@ class Configinfo:
 obj1 = Configinfo()
 credentials = obj1.get_credentials()
 neutron = client.Client(**credentials)
+#adding new line to file for test only
 netw = neutron.list_ports()
 nete = neutron.list_networks()
 obj1.print_port_values(netw, nete)
